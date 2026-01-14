@@ -1,0 +1,62 @@
+# Rudolfstiftung Instance ID Mapping
+# Original ID (from random01.conf) -> New ID (used in experiment results)
+# Instance: PeriodicHHC_Rudolfstiftung_P3_Cl26_C10_ur0.1_3147.txt
+#==================================================
+
+Original_ID	New_ID
+13	1
+16	2
+22	3
+37	4
+53	5
+65	6
+69	7 2-STOCHASTIC
+73	8
+92	9 0-STOCHASTIC
+96	10 2-STOCHASTIC
+134	11 0-STOCHASTIC
+144	12
+186	13
+192	14
+219	15
+221	16
+223	17
+225	18
+242	19
+256	20
+273	21
+276	22
+310	23
+337	24
+343	25 1-STOCHASTIC
+394	26 1-STOCHASTIC
+
+# Reverse mapping (New_ID -> Original_ID)
+New_ID	Original_ID
+1	13
+2	16
+3	22
+4	37
+5	53
+6	65
+7	69
+8	73
+9	92
+10	96
+11	134
+12	144
+13	186
+14	192
+15	219
+16	221
+17	223
+18	225
+19	242
+20	256
+21	273
+22	276
+23	310
+24	337
+25	343
+26	394
+

@@ -1,0 +1,51 @@
+# AKH (Allgemeines Krankenhaus Wien) Instance ID Mapping
+# Original ID (from random01.conf) -> New ID (used in experiment results)
+# Instance: PeriodicHHC_AKH_P3_Cl21_C10_ur0.2_42.txt
+#==================================================
+
+Original_ID	New_ID
+0	1
+51	2 1-STOCHASTIC
+58	3 0-STOCHASTIC
+71	4
+86	5 2-STOCHASTIC
+136	6
+148	7
+168	8 1-STOCHASTIC
+178	9
+213	10
+233	11
+240	12
+254	13
+262	14
+271	15
+287	16
+306	17
+320	18 2-STOCHASTIC
+370	19 0-STOCHASTIC
+399	20 0-STOCHASTIC
+419	21 1-STOCHASTIC
+
+# Reverse mapping (New_ID -> Original_ID)
+New_ID	Original_ID
+1	0
+2	51
+3	58
+4	71
+5	86
+6	136
+7	148
+8	168
+9	178
+10	213
+11	233
+12	240
+13	254
+14	262
+15	271
+16	287
+17	306
+18	320
+19	370
+20	399
+21	419

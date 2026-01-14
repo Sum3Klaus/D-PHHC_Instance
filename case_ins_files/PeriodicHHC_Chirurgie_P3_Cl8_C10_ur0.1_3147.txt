@@ -1,0 +1,73 @@
+# Hospital: Universitatsklinik fur Chirurgie
+# Generated: 2026-01-09 23:18:24
+# Customers: 8, Caregivers: 10
+
+# Caregiver Parameters
+Daily_Working_Time     : 480
+Max_Overtime           : 120
+Max_Working_Time       : 2160
+Max_Working_Days       : 4
+Service_Caregiver_Num  : 4
+Capacity               : 200
+Speed                  : 0.5
+continuity_benefit     : 15
+Benefit_Rate(qua+2)    : 3
+Unknown_Rate           : 0.1
+
+# Caregiver-Customer Benefit Matrix
+      6.00       INF       INF       INF       INF       INF
+      9.00     12.00       INF       INF       INF       INF
+     12.00     15.00     18.00       INF       INF       INF
+     15.00     18.00     21.00     24.00       INF       INF
+       INF       INF     24.00     27.00     30.00       INF
+       INF       INF     27.00     30.00     33.00     36.00
+
+# Caregiver Individual Info
+ID	Qual_Level	Initial_Cost	Overtime_Cost
+0	5	200.00	40.69
+1	4	180.00	35.03
+2	4	180.00	34.76
+3	2	140.00	27.79
+4	3	160.00	30.76
+5	1	120.00	27.26
+6	3	160.00	30.76
+7	3	160.00	32.44
+8	3	160.00	28.94
+9	2	140.00	26.02
+
+# Requests Info
+ID	X	Y	Qual	Dur	Dem	E_hard	E_soft	L_soft	L_hard	Type
+depot:	16.35	48.22
+Day 0:
+# Requirements num: 8 (Preorder: 7, Stochastic: 1)
+7   	   16.35	   48.21	   1	 21	 17	  397.90	  406.11	  471.79	  480.00	PREORDER
+42  	   16.34	   48.20	   4	 14	 14	  336.90	  346.90	  426.90	  436.90	PREORDER
+50  	   16.36	   48.22	   2	 12	 14	   60.00	   69.31	  143.80	  153.11	PREORDER
+123 	   16.35	   48.22	   1	  8	 12	  319.50	  329.50	  409.50	  419.50	PREORDER
+170 	   16.37	   48.22	   1	  9	 13	   60.00	   69.90	  149.10	  159.00	PREORDER
+200 	   16.36	   48.22	   1	  4	 11	   60.00	   68.71	  138.35	  147.06	PREORDER
+308 	   16.36	   48.21	   1	  9	 13	  402.64	  410.38	  472.26	  480.00	PREORDER
+341 	   16.36	   48.21	   4	 12	 14	  404.58	  412.13	  472.46	  480.00	STOCHASTIC
+
+Day 1:
+# Requirements num: 8 (Preorder: 7, Stochastic: 1)
+7   	   16.35	   48.21	   1	 21	 17	  397.90	  406.11	  471.79	  480.00	PREORDER
+42  	   16.34	   48.20	   1	 14	 14	  336.90	  346.90	  426.90	  436.90	PREORDER
+50  	   16.36	   48.22	   4	 12	 14	   60.00	   69.31	  143.80	  153.11	PREORDER
+123 	   16.35	   48.22	   1	  8	 12	  319.50	  329.50	  409.50	  419.50	STOCHASTIC
+170 	   16.37	   48.22	   1	  9	 13	   60.00	   69.90	  149.10	  159.00	PREORDER
+200 	   16.36	   48.22	   1	 10	 13	   60.00	   68.71	  138.35	  147.06	PREORDER
+308 	   16.36	   48.21	   1	  9	 13	  402.64	  410.38	  472.26	  480.00	PREORDER
+341 	   16.36	   48.21	   4	 12	 14	  404.58	  412.13	  472.46	  480.00	PREORDER
+
+Day 2:
+# Requirements num: 8 (Preorder: 7, Stochastic: 1)
+7   	   16.35	   48.21	   1	 21	 17	  397.90	  406.11	  471.79	  480.00	PREORDER
+42  	   16.34	   48.20	   1	  5	 11	  336.90	  346.90	  426.90	  436.90	PREORDER
+50  	   16.36	   48.22	   2	 12	 14	   60.00	   69.31	  143.80	  153.11	PREORDER
+123 	   16.35	   48.22	   1	  8	 12	  319.50	  329.50	  409.50	  419.50	PREORDER
+170 	   16.37	   48.22	   1	  9	 13	   60.00	   69.90	  149.10	  159.00	PREORDER
+200 	   16.36	   48.22	   1	  4	 11	   60.00	   68.71	  138.35	  147.06	PREORDER
+308 	   16.36	   48.21	   4	  9	 13	  402.64	  410.38	  472.26	  480.00	PREORDER
+341 	   16.36	   48.21	   1	  9	 13	  404.58	  412.13	  472.46	  480.00	STOCHASTIC
+

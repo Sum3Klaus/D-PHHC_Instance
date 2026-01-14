@@ -1,0 +1,51 @@
+# Donauspital (SMZ Ost) Instance ID Mapping
+# Original ID (from random01.conf) -> New ID (used in experiment results)
+# Instance: PeriodicHHC_Donauspital_P3_Cl21_C10_ur0.1_42.txt
+#==================================================
+
+Original_ID	New_ID
+24	1
+34	2
+38	3
+57	4
+74	5
+83	6 2-STOCHASTIC
+158	7 0-STOCHASTIC
+180	8
+193	9
+209	10
+229	11 0-STOCHASTIC
+258	12
+260	13 1-STOCHASTIC
+269	14
+270	15
+350	16
+355	17
+377	18 2-STOCHASTIC
+396	19
+397	20
+404	21 1-STOCHASTIC
+
+# Reverse mapping (New_ID -> Original_ID)
+New_ID	Original_ID
+1	24
+2	34
+3	38
+4	57
+5	74
+6	83
+7	158
+8	180
+9	193
+10	209
+11	229
+12	258
+13	260
+14	269
+15	270
+16	350
+17	355
+18	377
+19	396
+20	397
+21	404

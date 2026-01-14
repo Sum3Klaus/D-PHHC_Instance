@@ -1,0 +1,83 @@
+# Hospital: Allgemeines Krankenhaus Wien (AKH)
+# Generated: 2026-01-07 22:52:32
+# Customers: 21, Caregivers: 10
+
+# Caregiver Parameters
+Daily_Working_Time     : 480
+Max_Overtime           : 120
+Max_Working_Time       : 2160
+Max_Working_Days       : 4
+Service_Caregiver_Num  : 4
+Capacity               : 200
+Speed                  : 0.5
+continuity_benefit     : 15
+Benefit_Rate(qua+2)    : 3
+Unknown_Rate           : 0.2
+
+# Caregiver-Customer Benefit Matrix
+      6.00       INF       INF       INF       INF       INF
+      9.00     12.00       INF       INF       INF       INF
+     12.00     15.00     18.00       INF       INF       INF
+     15.00     18.00     21.00     24.00       INF       INF
+       INF       INF     24.00     27.00     30.00       INF
+       INF       INF     27.00     30.00     33.00     36.00
+
+# Caregiver Individual Info
+ID	Qual_Level	Initial_Cost	Overtime_Cost
+0	5	200.00	40.84
+1	5	200.00	37.15
+2	4	180.00	32.65
+3	4	180.00	32.34
+4	3	160.00	31.42
+5	3	160.00	31.06
+6	2	140.00	30.35
+7	3	160.00	27.52
+8	3	160.00	29.53
+9	3	160.00	27.18
+
+# Requests Info
+ID	X	Y	Qual	Dur	Dem	E_hard	E_soft	L_soft	L_hard	Type
+depot:	16.34	48.22
+Day 0:
+# Requirements num: 12 (Preorder: 9, Stochastic: 3)
+58  	   16.30	   48.28	   4	 10	 13	  199.00	  209.00	  289.00	  299.00	STOCHASTIC
+86  	   16.36	   48.24	   4	 16	 15	   60.00	   68.41	  135.72	  144.14	PREORDER
+136 	   16.34	   48.24	   1	 13	 14	  114.83	  124.83	  204.83	  214.83	PREORDER
+148 	   16.33	   48.25	   1	  7	 12	  117.49	  127.49	  207.49	  217.49	PREORDER
+240 	   16.33	   48.24	   1	  4	 11	  184.05	  194.05	  274.05	  284.05	PREORDER
+254 	   16.34	   48.22	   4	  3	 11	  180.91	  190.91	  270.91	  280.91	PREORDER
+271 	   16.33	   48.25	   1	  9	 13	  117.17	  127.17	  207.17	  217.17	PREORDER
+287 	   16.33	   48.24	   1	 18	 16	  184.90	  194.90	  274.90	  284.90	PREORDER
+306 	   16.34	   48.24	   1	  8	 12	  114.03	  124.03	  204.03	  214.03	PREORDER
+320 	   16.33	   48.25	   2	 14	 14	  116.15	  126.15	  206.15	  216.15	PREORDER
+370 	   16.35	   48.25	   1	 17	 15	  117.39	  127.39	  207.39	  217.39	STOCHASTIC
+399 	   16.35	   48.23	   1	 14	 14	  112.27	  122.27	  202.27	  212.27	STOCHASTIC
+
+Day 1:
+# Requirements num: 12 (Preorder: 9, Stochastic: 3)
+0   	   16.30	   48.27	   1	 11	 13	  196.76	  206.76	  286.76	  296.76	PREORDER
+51  	   16.33	   48.25	   1	  3	 11	  116.27	  126.27	  206.27	  216.27	STOCHASTIC
+71  	   16.37	   48.24	   1	 14	 14	   60.00	   68.72	  138.47	  147.19	PREORDER
+148 	   16.33	   48.25	   1	 15	 15	  117.49	  127.49	  207.49	  217.49	PREORDER
+168 	   16.31	   48.25	   1	  9	 13	  190.15	  200.15	  280.15	  290.15	STOCHASTIC
+178 	   16.33	   48.24	   2	  6	 12	  115.45	  125.45	  205.45	  215.45	PREORDER
+213 	   16.34	   48.26	   4	 12	 14	  118.88	  128.88	  208.88	  218.88	PREORDER
+233 	   16.30	   48.26	   1	 16	 15	  195.21	  205.21	  285.21	  295.21	PREORDER
+271 	   16.33	   48.25	   5	  9	 13	  117.17	  127.17	  207.17	  217.17	PREORDER
+306 	   16.34	   48.24	   1	 10	 13	  114.03	  124.03	  204.03	  214.03	PREORDER
+399 	   16.35	   48.23	   4	  9	 13	  112.27	  122.27	  202.27	  212.27	PREORDER
+419 	   16.30	   48.26	   2	 19	 16	  193.50	  203.50	  283.50	  293.50	STOCHASTIC
+
+Day 2:
+# Requirements num: 10 (Preorder: 8, Stochastic: 2)
+0   	   16.30	   48.27	   1	  3	 11	  196.76	  206.76	  286.76	  296.76	PREORDER
+51  	   16.33	   48.25	   1	  9	 13	  116.27	  126.27	  206.27	  216.27	PREORDER
+71  	   16.37	   48.24	   4	  7	 12	   60.00	   68.72	  138.47	  147.19	PREORDER
+86  	   16.36	   48.24	   1	 12	 14	   60.00	   68.41	  135.72	  144.14	STOCHASTIC
+168 	   16.31	   48.25	   1	 16	 15	  190.15	  200.15	  280.15	  290.15	PREORDER
+178 	   16.33	   48.24	   1	  6	 12	  115.45	  125.45	  205.45	  215.45	PREORDER
+213 	   16.34	   48.26	   1	 14	 14	  118.88	  128.88	  208.88	  218.88	PREORDER
+240 	   16.33	   48.24	   1	  5	 11	  184.05	  194.05	  274.05	  284.05	PREORDER
+262 	   16.31	   48.25	   1	 12	 14	  191.87	  201.87	  281.87	  291.87	PREORDER
+320 	   16.33	   48.25	   4	  3	 11	  116.15	  126.15	  206.15	  216.15	STOCHASTIC
+

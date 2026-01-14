@@ -1,0 +1,53 @@
+# Floridsdorf Instance ID Mapping
+# Original ID (from random01.conf) -> New ID (used in experiment results)
+# Instance: PeriodicHHC_Floridsdorf_P3_Cl22_C10_ur0.1_42.txt
+#==================================================
+
+Original_ID	New_ID
+40	1
+60	2
+64	3
+98	4
+104	5 1-STOCHASTIC
+110	6
+113	7
+121	8
+129	9 2-STOCHASTIC
+130	10
+140	11 2-STOCHASTIC
+154	12
+182	13 1-STOCHASTIC
+196	14
+266	15
+281	16
+299	17 0-STOCHASTIC
+326	18 0-STOCHASTIC
+351	19
+353	20
+383	21
+387	22
+
+# Reverse mapping (New_ID -> Original_ID)
+New_ID	Original_ID
+1	40
+2	60
+3	64
+4	98
+5	104 
+6	110
+7	113
+8	121
+9	129
+10	130
+11	140
+12	154
+13	182
+14	196
+15	266
+16	281
+17	299
+18	326
+19	351
+20	353
+21	383
+22	387
