@@ -1,0 +1,51 @@
+# Caregiver Parameters
+Daily_Working_Time     : 480
+Max_Overtime           : 120
+Max_Working_Time       : 2160
+Max_Working_Days       : 4
+Service_Caregiver_Num  : 4
+Capacity               : 200
+Speed                  : 1
+continuity_benefit     : 15
+Benefit_Rate(qua+2)    : 3
+Unknown_Rate           : 0.0
+
+# Caregiver-Customer Benefit Matrix
+      6.00       INF       INF       INF       INF       INF
+      9.00     12.00       INF       INF       INF       INF
+     12.00     15.00     18.00       INF       INF       INF
+     15.00     18.00     21.00     24.00       INF       INF
+       INF       INF     24.00     27.00     30.00       INF
+       INF       INF     27.00     30.00     33.00     36.00
+
+# Caregiver Individual Info
+ID	Qual_Level	Initial_Cost	Overtime_Cost
+0	3	160.00	27.76
+1	2	140.00	29.48
+2	5	200.00	39.33
+
+# Requests Info
+ID	X	Y	Qual	Dur	Dem	E_hard	E_soft	L_soft	L_hard	Type
+depot:	40.00	50.00
+Day 0:
+# Requirements num: 8 (Preorder: 8, Stochastic: 0)
+1  	   45.00	   68.00	   3	 15	 25	  329.00	  337.50	  354.50	  363.00	PREORDER
+2  	   45.00	   70.00	   1	 23	 15	   50.00	   57.50	   72.50	   80.00	PREORDER
+3  	   42.00	   66.00	   1	 23	 15	  366.00	  378.75	  404.25	  417.00	PREORDER
+4  	   42.00	   68.00	   3	 33	 25	  225.00	  238.50	  265.50	  279.00	PREORDER
+5  	   42.00	   65.00	   0	 15	 10	  340.00	  348.50	  365.50	  374.00	PREORDER
+6  	   40.00	   69.00	   5	 40	 35	   45.00	   55.00	   75.00	   85.00	PREORDER
+7  	   40.00	   66.00	   2	 23	 20	  386.00	  397.50	  420.50	  432.00	PREORDER
+8  	   38.00	   68.00	   5	 45	 35	   34.00	   46.00	   70.00	   82.00	PREORDER
+
+
+# Solution Results
+model status: OPTIMAL
+objective:    133.894000
+solution info:
+cg_id        route                                    obj          dis        fixed_cost   wage_cost    benefits   satisfaction continuity_benefit
+Day 0:
+1            [0, 2, 5, 3, 9]                          96.572000    43.572     140.000      0.000        42.000     45.000       0.000             
+2            [0, 8, 6, 4, 1, 7, 9]                    37.322000    46.968     200.000      0.000        159.000    50.646       0.000             
+
+

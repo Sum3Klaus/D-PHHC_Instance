@@ -1,0 +1,70 @@
+# Caregiver Parameters
+Daily_Working_Time     : 480
+Max_Overtime           : 120
+Max_Working_Time       : 2160
+Max_Working_Days       : 4
+Service_Caregiver_Num  : 4
+Capacity               : 200
+Speed                  : 1
+continuity_benefit     : 15
+Benefit_Rate(qua+2)    : 3
+Unknown_Rate           : 0.0
+
+# Caregiver-Customer Benefit Matrix
+      6.00       INF       INF       INF       INF       INF
+      9.00     12.00       INF       INF       INF       INF
+     12.00     15.00     18.00       INF       INF       INF
+     15.00     18.00     21.00     24.00       INF       INF
+       INF       INF     24.00     27.00     30.00       INF
+       INF       INF     27.00     30.00     33.00     36.00
+
+# Caregiver Individual Info
+ID	Qual_Level	Initial_Cost	Overtime_Cost
+0	4	180.00	32.49
+1	2	140.00	31.79
+2	3	160.00	28.88
+3	5	200.00	39.25
+
+# Requests Info
+ID	X	Y	Qual	Dur	Dem	E_hard	E_soft	L_soft	L_hard	Type
+depot:	40.00	50.00
+Day 0:
+# Requirements num: 9 (Preorder: 9, Stochastic: 0)
+1  	   25.00	   85.00	   2	 27	 20	  306.00	  319.00	  345.00	  358.00	PREORDER
+2  	   22.00	   75.00	   5	 20	 35	  601.00	  613.00	  637.00	  649.00	PREORDER
+3  	   22.00	   85.00	   3	 18	 25	  687.00	  699.50	  724.50	  737.00	PREORDER
+4  	   20.00	   80.00	   2	 27	 20	  527.00	  541.50	  570.50	  585.00	PREORDER
+5  	   20.00	   85.00	   4	 47	 30	  354.00	  365.00	  387.00	  398.00	PREORDER
+6  	   18.00	   75.00	   5	 35	 35	  169.00	  181.75	  207.25	  220.00	PREORDER
+8  	   15.00	   80.00	   5	 15	 35	  192.00	  204.00	  228.00	  240.00	PREORDER
+9  	   10.00	   35.00	   4	 35	 30	  121.00	  130.75	  150.25	  160.00	PREORDER
+10 	   10.00	   40.00	   3	 39	 25	   91.00	  100.00	  118.00	  127.00	PREORDER
+
+Day 1:
+# Requirements num: 9 (Preorder: 9, Stochastic: 0)
+1  	   25.00	   85.00	   2	 27	 20	  291.00	  300.00	  318.00	  327.00	PREORDER
+2  	   22.00	   75.00	   1	 25	 15	  222.00	  232.25	  252.75	  263.00	PREORDER
+3  	   22.00	   85.00	   3	 39	 25	  765.00	  772.75	  788.25	  796.00	PREORDER
+4  	   20.00	   80.00	   1	 23	 15	   79.00	   88.75	  108.25	  118.00	PREORDER
+5  	   20.00	   85.00	   3	 15	 25	   63.00	   71.25	   87.75	   96.00	PREORDER
+6  	   18.00	   75.00	   5	 55	 35	  235.00	  244.50	  263.50	  273.00	PREORDER
+7  	   15.00	   75.00	   2	 17	 20	   77.00	   89.50	  114.50	  127.00	PREORDER
+9  	   10.00	   35.00	   4	 27	 30	  190.00	  198.25	  214.75	  223.00	PREORDER
+10 	   10.00	   40.00	   4	 39	 30	  203.00	  215.75	  241.25	  254.00	PREORDER
+
+
+# Solution Results
+model status: OPTIMAL
+objective:    454.685000
+solution info:
+cg_id        route                                    obj          dis        fixed_cost   wage_cost    benefits   satisfaction continuity_benefit
+Day 0:
+0            [0, 10, 9, 11]                           163.164000   70.164     180.000      0.000        57.000     30.000       0.000             
+3            [0, 6, 8, 1, 5, 4, 2, 3, 11]             -14.945000   115.055    200.000      0.000        225.000    105.000      0.000             
+
+Day 1:
+0            [0, 9, 10, 11]                           130.164000   70.164     180.000      0.000        60.000     30.000       30.000            
+1            [0, 4, 2, 11]                            152.247000   72.247     140.000      0.000        30.000     30.000       0.000             
+3            [0, 5, 7, 6, 1, 3, 11]                   24.055000    109.055    200.000      0.000        150.000    75.000       60.000            
+
+

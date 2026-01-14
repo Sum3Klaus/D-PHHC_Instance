@@ -1,0 +1,81 @@
+# Caregiver Parameters
+Daily_Working_Time     : 480
+Max_Overtime           : 120
+Max_Working_Time       : 2160
+Max_Working_Days       : 4
+Service_Caregiver_Num  : 4
+Capacity               : 200
+Speed                  : 1
+continuity_benefit     : 15
+Benefit_Rate(qua+2)    : 3
+Unknown_Rate           : 0.0
+
+# Caregiver-Customer Benefit Matrix
+      6.00       INF       INF       INF       INF       INF
+      9.00     12.00       INF       INF       INF       INF
+     12.00     15.00     18.00       INF       INF       INF
+     15.00     18.00     21.00     24.00       INF       INF
+       INF       INF     24.00     27.00     30.00       INF
+       INF       INF     27.00     30.00     33.00     36.00
+
+# Caregiver Individual Info
+ID	Qual_Level	Initial_Cost	Overtime_Cost
+0	4	180.00	37.03
+1	3	160.00	33.67
+2	5	200.00	42.71
+
+# Requests Info
+ID	X	Y	Qual	Dur	Dem	E_hard	E_soft	L_soft	L_hard	Type
+depot:	40.00	50.00
+Day 0:
+# Requirements num: 8 (Preorder: 8, Stochastic: 0)
+1  	   45.00	   68.00	   3	 24	 25	  840.00	  852.75	  878.25	  891.00	PREORDER
+2  	   45.00	   70.00	   3	 36	 25	  135.00	  147.75	  173.25	  186.00	PREORDER
+3  	   42.00	   66.00	   2	 31	 20	  378.00	  388.50	  409.50	  420.00	PREORDER
+4  	   42.00	   68.00	   1	 17	 15	   46.00	   56.00	   76.00	   86.00	PREORDER
+5  	   42.00	   65.00	   0	 15	 10	  219.00	  227.75	  245.25	  254.00	PREORDER
+6  	   40.00	   69.00	   2	 19	 20	  382.00	  396.75	  426.25	  441.00	PREORDER
+7  	   40.00	   66.00	   2	 29	 20	  507.00	  520.50	  547.50	  561.00	PREORDER
+8  	   38.00	   68.00	   5	 60	 35	  176.00	  188.00	  212.00	  224.00	PREORDER
+
+Day 1:
+# Requirements num: 8 (Preorder: 8, Stochastic: 0)
+1  	   45.00	   68.00	   5	 30	 35	  255.00	  264.00	  282.00	  291.00	PREORDER
+2  	   45.00	   70.00	   1	 21	 15	  242.00	  252.25	  272.75	  283.00	PREORDER
+3  	   42.00	   66.00	   3	 21	 25	  118.00	  127.75	  147.25	  157.00	PREORDER
+4  	   42.00	   68.00	   3	 24	 25	  562.00	  576.25	  604.75	  619.00	PREORDER
+5  	   42.00	   65.00	   4	 31	 30	  362.00	  373.00	  395.00	  406.00	PREORDER
+6  	   40.00	   69.00	   5	 50	 35	   49.00	   60.50	   83.50	   95.00	PREORDER
+7  	   40.00	   66.00	   2	 25	 20	  687.00	  698.75	  722.25	  734.00	PREORDER
+8  	   38.00	   68.00	   2	 19	 20	  352.00	  362.75	  384.25	  395.00	PREORDER
+
+Day 2:
+# Requirements num: 8 (Preorder: 8, Stochastic: 0)
+1  	   45.00	   68.00	   1	 17	 15	  618.00	  627.00	  645.00	  654.00	PREORDER
+2  	   45.00	   70.00	   2	 21	 20	  331.00	  342.50	  365.50	  377.00	PREORDER
+3  	   42.00	   66.00	   3	 33	 25	  415.00	  429.25	  457.75	  472.00	PREORDER
+4  	   42.00	   68.00	   5	 20	 35	  185.00	  199.50	  228.50	  243.00	PREORDER
+5  	   42.00	   65.00	   2	 35	 20	  741.00	  755.75	  785.25	  800.00	PREORDER
+6  	   40.00	   69.00	   1	 17	 15	  264.00	  274.75	  296.25	  307.00	PREORDER
+7  	   40.00	   66.00	   5	 60	 35	  651.00	  658.50	  673.50	  681.00	PREORDER
+8  	   38.00	   68.00	   4	 15	 30	  783.00	  794.00	  816.00	  827.00	PREORDER
+
+
+# Solution Results
+model status: OPTIMAL
+objective:    169.448000
+solution info:
+cg_id        route                                    obj          dis        fixed_cost   wage_cost    benefits   satisfaction continuity_benefit
+Day 0:
+1            [0, 4, 2, 5, 9]                          100.681000   42.681     160.000      0.000        57.000     45.000       0.000             
+2            [0, 8, 3, 6, 7, 1, 9]                    31.256000    53.256     200.000      0.000        147.000    75.000       0.000             
+
+Day 1:
+1            [0, 2, 9]                                153.232000   41.232     160.000      0.000        18.000     15.000       15.000            
+2            [0, 6, 3, 1, 8, 5, 4, 7, 9]              -138.960000  60.040     200.000      0.000        219.000    105.000      75.000            
+
+Day 2:
+1            [0, 6, 2, 1, 9]                          87.781000    44.781     160.000      0.000        57.000     45.000       15.000            
+2            [0, 4, 3, 7, 5, 8, 9]                    -64.542000   47.458     200.000      0.000        162.000    75.000       75.000            
+
+
